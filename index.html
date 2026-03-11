@@ -6,7 +6,6 @@
   <title>DAAD Scholars | Bayerisches Geoinstitut</title>
 
   <style>
-
     body {
       font-family: Arial, Helvetica, sans-serif;
       margin: 0;
@@ -24,12 +23,25 @@
       max-width: 1000px;
       margin: auto;
       display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header-left {
+      display: flex;
       align-items: center;
       gap: 20px;
     }
 
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 15px; 
+    }
+
     .logo {
       height: 60px;
+      object-fit: contain;
     }
 
     .title h1 {
@@ -95,31 +107,30 @@
     }
 
   </style>
-
 </head>
 
 <body>
 
 <header>
-
   <div class="header-container">
-
-    <img src="images/daad-logo.svg" alt="DAAD Logo" class="logo">
-    <img src="images/Universitat_Bayreuth.png" alt="University Logo" class="logo">
-      <img src="images/BGI-logo-1.png" alt="BGI Logo" class="logo">
+    
+    <div class="header-left">
+      <img src="images/daad-logo.svg" alt="DAAD Logo" class="logo">
+      <div class="title">
+        <h1>DAAD Scholars</h1>
+        <p>Bayerisches Geoinstitut · University of Bayreuth</p>
+      </div>
     </div>
 
-    <div class="title">
-      <h1>DAAD Scholars</h1>
-      <p>Bayerisches Geoinstitut · University of Bayreuth</p>
+    <div class="header-right">
+      <img src="images/Universitat_Bayreuth.png" alt="University Logo" class="logo">
+      <img src="images/image.png" alt="BGI Logo" class="logo">
     </div>
 
   </div>
-
 </header>
 
 <main>
-
   <section class="grid">
 
     <div class="card">
@@ -147,7 +158,6 @@
     </div>
 
   </section>
-
 </main>
 
 <footer>
