@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanket Samal | DAAD Scholars</title>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background: #f7f7f7;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    /* Keeping the same header styles */
+    header {
+      background: white;
+      border-bottom: 1px solid #e5e5e5;
+      padding: 20px 30px;
+    }
+
+    .header-container {
+      max-width: 1000px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 15px; 
+    }
+
+    .logo {
+      height: 60px;
+      object-fit: contain;
+      transition: opacity 0.2s ease;
+    }
+
+    a:hover .logo {
+      opacity: 0.8;
+    }
+
+    .title h1 {
+      margin: 0;
+      font-size: 26px;
+    }
+
+    .title p {
+      margin: 4px 0 0 0;
+      color: #666;
+      font-size: 14px;
+    }
+
+    /* Profile Specific Styles */
+    main {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 20px;
+      color: #0056b3;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    .profile-container {
+      background: white;
+      border: 1px solid #e5e5e5;
+      border-radius: 10px;
+      padding: 40px;
+      display: flex;
+      gap: 40px;
+    }
+
+    .profile-sidebar {
+      flex: 0 0 250px;
+      text-align: center;
+    }
+
+    .avatar-large {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: #ddd;
+      margin: 0 auto 20px auto;
+      object-fit: cover;
+    }
+
+    .profile-sidebar h2 {
+      margin: 0 0 5px 0;
+      font-size: 24px;
+    }
+
+    .profile-sidebar .role {
+      color: #777;
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+
+    .contact-btn {
+      display: inline-block;
+      background: #222;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 14px;
+      transition: background 0.2s;
+    }
+
+    .contact-btn:hover {
+      background: #444;
+    }
+
+    .profile-content {
+      flex: 1;
+    }
+
+    .profile-content h3 {
+      font-size: 20px;
+      border-bottom: 2px solid #f0f0f0;
+      padding-bottom: 10px;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    .profile-content p {
+      margin-bottom: 20px;
+      color: #444;
+    }
+
+    .profile-content ul {
+      color: #444;
+      padding-left: 20px;
+    }
+
+    .profile-content li {
+      margin-bottom: 8px;
+    }
+
+    footer {
+      text-align: center;
+      margin: 60px 0 30px 0;
+      font-size: 13px;
+      color: #777;
+    }
+
+    /* Responsive design for smaller screens */
+    @media (max-width: 768px) {
+      .profile-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .profile-sidebar {
+        flex: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-container">
+    <div class="header-left">
+      <img src="images/daad-logo.svg" alt="DAAD Logo" class="logo">
+      <div class="title">
+        <h1>DAAD Scholars</h1>
+        <p>Bayerisches Geoinstitut · University of Bayreuth</p>
+      </div>
+    </div>
+    <div class="header-right">
+      <a href="https://www.uni-bayreuth.de/en" target="_blank" rel="noopener noreferrer">
+        <img src="images/Universitat_Bayreuth.png" alt="University Logo" class="logo">
+      </a>
+      <a href="https://www.bgi.uni-bayreuth.de/en" target="_blank" rel="noopener noreferrer">
+        <img src="images/BGI-logo-1.png" alt="BGI Logo" class="logo">
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <a href="index.html" class="back-link">← Back to all scholars</a>
+
+  <div class="profile-container">
+    
+    <div class="profile-sidebar">
+      <div class="avatar-large"></div>
+      <h2>Sanket Samal</h2>
+      <div class="role">DAAD PhD Scholar<br>Planetary Science</div>
+      <a href="mailto:your.email@uni-bayreuth.de" class="contact-btn">Email Sanket</a>
+    </div>
+
+    <div class="profile-content">
+      
+      <h3>About Me</h3>
+      <p>I am a DAAD PhD Scholar in Planetary Science currently advancing my research at the Bayerisches Geoinstitut (BGI). I graduated from [Insert Previous University/Degree] before moving to Germany to pursue my doctoral studies. My work is deeply rooted in cosmochemistry, exploring the fundamental processes that shaped our early solar system.</p>
+
+      <h3>Current Research</h3>
+      <p>My research focuses on planetary differentiation processes and isotopic systematics. Specifically, I am analyzing various meteorite samples—including NWA 6901, Erg Atouila 001, NWA 11561, and NWA 12455—through petrographic reporting, mineral separation, and chronological analysis.</p>
+      <p>A significant portion of my lab work involves developing and refining methodologies for measuring Al-Mg isotope ratios in rock standards and meteorites to better understand the timelines of early solar system formation.</p>
+
+      <h3>Selected Expertise</h3>
+      <ul>
+        <li>Cosmochemistry and Planetary Differentiation</li>
+        <li>Al-Mg Isotope Systematics</li>
+        <li>Meteorite Petrography and Analysis</li>
+        <li>Analytical Techniques: SEM-EDS, EPMA</li>
+      </ul>
+
+    </div>
+  </div>
+</main>
+
+<footer>
+  © 2026 Bayerisches Geoinstitut · DAAD Scholars
+</footer>
+
+</body>
+</html>
