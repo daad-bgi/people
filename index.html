@@ -42,6 +42,12 @@
     .logo {
       height: 60px;
       object-fit: contain;
+      transition: opacity 0.2s ease;
+    }
+
+    /* Add hover effect for clickable logos */
+    a:hover .logo {
+      opacity: 0.8;
     }
 
     .title h1 {
@@ -59,6 +65,37 @@
       max-width: 1000px;
       margin: 50px auto;
       padding: 0 20px;
+    }
+
+    /* New styles for the introduction section */
+    .intro-section {
+      background: white;
+      border: 1px solid #e5e5e5;
+      border-radius: 10px;
+      padding: 30px;
+      margin-bottom: 30px;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    .intro-section h2 {
+      margin-top: 0;
+      font-size: 22px;
+    }
+
+    .intro-section h3 {
+      font-size: 18px;
+      margin-top: 25px;
+      margin-bottom: 10px;
+    }
+
+    .sidenote {
+      font-size: 13.5px;
+      color: #777;
+      margin-top: 20px;
+      padding-top: 15px;
+      border-top: 1px dashed #ddd;
+      font-style: italic;
     }
 
     .grid {
@@ -123,14 +160,29 @@
     </div>
 
     <div class="header-right">
-      <img src="images/Universitat_Bayreuth.png" alt="University Logo" class="logo">
-      <img src="images/BGI-logo-1.png" alt="BGI Logo" class="logo">
+      <a href="https://www.uni-bayreuth.de/en" target="_blank" rel="noopener noreferrer">
+        <img src="images/Universitat_Bayreuth.png" alt="University Logo" class="logo">
+      </a>
+      <a href="https://www.bgi.uni-bayreuth.de/en" target="_blank" rel="noopener noreferrer">
+        <img src="images/BGI-logo-1.png" alt="BGI Logo" class="logo">
+      </a>
     </div>
 
   </div>
 </header>
 
 <main>
+  
+  <section class="intro-section">
+    <h2>Welcome visitor!</h2>
+    <p>This page is dedicated to all the DAAD-GSSP scholarship holders currently advancing their research here at the Bayerisches Geoinstitut (BGI). We are a diverse, international community of PhD students driven by a shared passion for exploring the Earth and materials sciences at the University of Bayreuth. We are funded by DAAD (Deutscher Akademischer Austauschdienst) for 4 years.</p>
+    
+    <h3>Connect With Us</h3>
+    <p>We invite you to explore the website and get to know the faces behind the research. If you find yourself interested in someone’s specific work, a project, or a publication, please feel free to drop them an email. We are always excited to discuss our science, answer questions, and explore new collaborations!</p>
+    
+    <p class="sidenote">On a side note, you can Click the University logo to learn more about the vibrant campus and Click the BGI logo to dive into our institute’s scientific ambitions, facilities and cutting-edge research.</p>
+  </section>
+
   <section class="grid">
 
     <div class="card">
@@ -162,6 +214,10 @@
 
 <footer>
   © 2026 Bayerisches Geoinstitut · DAAD Scholars
+</footer>
+
+</body>
+</html>
 </footer>
 
 </body>
